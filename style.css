@@ -4,26 +4,28 @@
   box-sizing: border-box;
 }
 
-.title {
+.header-text {
   display: grid;
   justify-items: center;
   align-self: center;
 }
-.stltext {
+.title {
+  
   color: aliceblue;
   font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .conteiner {
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
   grid-template-columns: minmax(200px,1200px);
-  justify-items: center;
+  justify-content: center;
 
 }
 
 .header {
-  background-color: rgb(42, 155, 85);
+  background-color: rgb(69, 161, 104);
   display: grid;
   grid-template-columns: minmax(200px,1200px);
   max-height: 1200px;
@@ -41,6 +43,10 @@
   width: 100px;
   height: 40px;
   border-radius: 20px;
+}
+
+.btn:hover {
+  background-color:  rgb(28, 91, 8);
 }
 
 .main {
