@@ -7,10 +7,9 @@
 .header-text {
   display: grid;
   justify-items: center;
-  align-self: center;
+  align-self: flex-start;
 }
 .title {
-  
   color: aliceblue;
   font-size: 2rem;
   text-transform: uppercase;
@@ -18,25 +17,22 @@
 
 .conteiner {
   display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-rows: 170px 2fr 104px;
   grid-template-columns: minmax(200px,1200px);
   justify-content: center;
-
 }
 
 .header {
   background-color: rgb(69, 161, 104);
   display: grid;
   grid-template-columns: minmax(200px,1200px);
-  max-height: 1200px;
+  justify-content: space-evenly;
 }
-
 
 .nav-list {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
-  justify-content:space-between;
 }
 
 .btn {
@@ -51,12 +47,18 @@
 
 .main {
   background-color:rgb(9, 170, 223);
-  max-width: 1200px;
+  display: grid;
+  grid-template-columns: minmax(200px,1200px);
+}
+
+.main>.title {
+  justify-self: center;
+  padding:50px;
 }
 
 .main-wrapper {
   display: grid;
-  grid-template-columns: repeat(6, minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
   grid-template-rows: repeat(6, minmax(50px,1fr));
   grid-template-areas: "item1 item2 item3 item3"
                        "item4 item5 item3 item3"
@@ -69,7 +71,7 @@
 }
 
 .item1 {
-  grid-area: item1,item2,item3;
+  grid-area: item1;
 }
 
 .item2 {
